@@ -47,11 +47,8 @@ namespace PingPongMeter
                     if (_watch.ElapsedMilliseconds > 10 * 1000 * 60)
                     {
                         TimeSpan timeSpan = _watch.Elapsed.Add(new TimeSpan(0, 10, 0));
-                        
-
                         label10.Text = "Tid som gått: " + timeSpan.ToString("hh\\:mm\\:ss");
-                        //label10.Text = "Tid som gått:" + hours +":" + minutes +":" + seconds;
-                        //MessageBox.Show("Time:" + watch.ElapsedMilliseconds / 1000 / 60);
+                    
                     }
                     _watch.Reset();
                     
